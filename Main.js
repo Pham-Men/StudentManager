@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var StudentManager_1 = require("./src/StudentManager");
+var student_1 = require("./src/student");
+var studentsManager = new StudentManager_1.StudentManager();
+var student1 = new student_1.Student("Men", "c10", 9);
+var student2 = new student_1.Student("Men2", "c10", 8);
+var student3 = new student_1.Student("Men2", "c10", 2);
+studentsManager.add(student1);
+studentsManager.add(student2);
+studentsManager.add(student3);
+studentsManager.showList();
+studentsManager.totalStudent();
+studentsManager.findStudentByName("Men");
